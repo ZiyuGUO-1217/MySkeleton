@@ -1,4 +1,4 @@
-package com.kaku.domain.repository
+package com.kaku.data.repository
 
 import kotlinx.coroutines.flow.Flow
 

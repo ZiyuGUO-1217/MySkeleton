@@ -1,7 +1,7 @@
 package com.kaku.data.di
 
 import com.kaku.data.repository.DefaultNumRepository
-import com.kaku.domain.repository.INumRepository
+import com.kaku.data.repository.INumRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

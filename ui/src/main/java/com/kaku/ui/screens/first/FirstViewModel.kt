@@ -2,7 +2,7 @@ package com.kaku.ui.screens.first
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.kaku.domain.repository.INumRepository
+import com.kaku.data.repository.INumRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
