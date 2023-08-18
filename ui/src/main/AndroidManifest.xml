@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name=".screens.first.FirstActivity"
+            android:exported="false"
+            android:label="@string/title_activity_first"
+            android:theme="@style/Theme.MySkeleton" />
+        <activity
+            android:name=".screens.second.SecondActivity"
+            android:exported="false"
+            android:label="@string/title_activity_second"
+            android:theme="@style/Theme.MySkeleton" />
+    </application>
+
+</manifest>
