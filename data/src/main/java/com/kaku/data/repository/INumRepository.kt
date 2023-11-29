@@ -10,8 +10,6 @@ interface INumRepository {
 
     fun minusNum()
 
-    fun resetNum()
-
     companion object {
         const val INIT_VALUE = 0
     }

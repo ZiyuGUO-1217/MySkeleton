@@ -19,12 +19,17 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.kaku.data.di.MyComponentManager
 import com.kaku.ui.screens.second.SecondActivity
 import com.kaku.ui.theme.MySkeletonTheme
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class FirstActivity : ComponentActivity() {
+
+    @Inject
+    lateinit var componentManager: MyComponentManager
 
     private val viewModel by viewModels<FirstViewModel>()
 
@@ -79,5 +84,10 @@ class FirstActivity : ComponentActivity() {
                 }
             }
         }
+    }
+
+    override fun onDestroy() {
+        componentManager.recreateComponent()
+        super.onDestroy()
     }
 }

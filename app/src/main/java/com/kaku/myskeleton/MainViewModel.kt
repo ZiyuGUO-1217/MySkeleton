@@ -10,7 +10,4 @@ class MainViewModel @Inject constructor(
     private val numRepository: INumRepository
 ) : ViewModel() {
 
-    fun resetData() {
-        numRepository.resetNum()
-    }
 }
